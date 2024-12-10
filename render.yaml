@@ -1,3 +1,11 @@
+services:
+  - type: web
+    name: my-python-service
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    plan: free
+
 build:
     python:
         version: 3.9
