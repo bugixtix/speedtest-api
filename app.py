@@ -3,7 +3,7 @@ import speedtest
 
 app = Flask(__name__)
 
-@app.rout('/speedtest', method=['GET'])
+@app.route('/speedtest', methods=['GET'])
 def speedtest_handler():
     st = speedtest.Speedtest()
     st.get_best_server()
