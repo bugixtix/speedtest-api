@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
 import speedtest
+import os
 
 app = Flask(__name__)
+
 
 @app.route('/speedtest', methods=['GET'])
 def speedtest_handler():
@@ -13,4 +15,5 @@ def speedtest_handler():
     return jsonify({'ping':ping, 'download':download, 'upload':upload})
 
 if __name__ == '__main__':
+    PORT = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=5000)

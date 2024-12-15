@@ -3,5 +3,5 @@ services:
     name: my-python-service
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
+    startCommand: startCommand: gunicorn -w 2 -b 0.0.0.0:5000 app:app
     plan: free
