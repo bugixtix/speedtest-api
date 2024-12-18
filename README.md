@@ -2,9 +2,12 @@
 
 This is a Flask-based web application for measuring internet speed, including download, upload, and ping. It uses the `speedtest` Python module to perform tests and is hosted on a cloud platform like AWS.
 
+## Warning
+
+The project considered as failed due to incorrect download speed that speedtest-cli package provides (The mentioned package uses old technologies to measure download speed).
+
 ## Features
 - Measure download, upload, and ping speeds.
-- JSON API response for easy integration.
 
 ## Installation
 1. Clone this repository:
@@ -23,7 +26,7 @@ This is a Flask-based web application for measuring internet speed, including do
 
 ## Usage
 - Access the app in your browser at `http://localhost:5000` (or the deployed URL).
-- The results are displayed in a JSON format.
+- The results are displayed in a HTML format.
 
 ## Deployment
 - This app can be deployed on platforms like AWS. Ensure `gunicorn` is added to `requirements.txt` for production.
