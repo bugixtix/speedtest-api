@@ -14,7 +14,7 @@ Please don't hesitate opening PR if you find any solution for this problem.
 1. Clone this repository:
    ```bash
    git clone https://github.com/bugixtix/speedtest-py.git
-   cd internet-speed-test
+   cd speedtest-py
    ```
 2. Install dependencies:
    ```bash
