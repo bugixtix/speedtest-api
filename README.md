@@ -1,10 +1,11 @@
 # Internet Speed Test Service
 
-This is a Flask-based web application for measuring internet speed, including download, upload, and ping. It uses the `speedtest` Python module to perform tests and is hosted on a cloud platform like AWS.
+This is a Flask-based web application for measuring internet speed, including download, upload, and ping. It uses the `speedtest-cli` Python module to perform tests.
 
 ## Warning
 
 The project considered as failed due to incorrect download speed that speedtest-cli package provides (The mentioned package uses old technologies to measure download speed).
+Please don't hesitate opening PR if you find any solution for this problem. 
 
 ## Features
 - Measure download, upload, and ping speeds.
@@ -12,7 +13,7 @@ The project considered as failed due to incorrect download speed that speedtest-
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/internet-speed-test.git
+   git clone https://github.com/bugixtix/speedtest-py.git
    cd internet-speed-test
    ```
 2. Install dependencies:
